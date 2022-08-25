@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" #="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Starts/////////////////////////////////////////////////////////////////////// -->
+  <header class="navbar">
+      <img class="logo" src="resources/Logo.png" alt="">
+      <ul id="menus" class="menus">
+        <li class="menu-list"><a href="#">Frelancers</a></li>
+        <li class="menu-list"><a href="#">Employers</a></li>
+        <li class="menu-list"><a href="#">Services</a></li>
+        <li class="menu-list"><a href="#">Portfolio</a></li>
+        <li class="menu-list"><a href="#">About Us</a></li>
+        <li class="menu-list"><a href="#">Team</a></li>
+        <li class="menu-list"><div class="header-button">
+          <a>
+          Become Freelancer
+          </a>
+      </div></li>
+      </ul>
+      
+      
+    <img id="bar" class="bar"src="resources/bars-solid.svg" alt="">
+  </header>
+  <!-- Header Ends////////////////////////////////////////////////////////////////////////////// -->
+ 
+ 
+ 
+  <!-- section 1 starts//////////////////////////////////////////////////////////////////////////// -->
+  <div class="section-1">
+
+
+ <div class="section-1-box">
+    
+  <h1>Where will <span>great work</span> <br> take you</h1>
+    <div class="divider"></div>
+  <p>find freelancers to tackle any job, any size, anny time</p>
+  <br><br>  <br><br>
+  <a href="#">
+    Get Started
+  </a>
+  </div>
+</div>
+    <!-- sectin 1 Ends///////////////////////////////////////////////////////////////////////////// -->
+ 
+ 
+ 
+ 
+  <!-- section 2 starts//////////////////////////////////////////////////////////////////////////// -->
+ 
+ 
+  <section class="section-2">
+    <div class="left">
+      
+      <div class="text-box">
+        <h1>great <span> works starts</span> with <br> great talent</h1>
+    <P>
+get amazing results working with the beest programmers, designerrrs,writers and other top online props. Hire freelancers with confidence. alwaaays knowing their work eperience and feedback from other clients.
+</P>
+      </div>
+      
+    </div>
+    <div class="right">
+      <img src="resources/Vector 1.png" alt="">
+    </div>
+  </section>
+ 
+  <div class="divider"></div>
+ 
+  <!-- section 3 starts//////////////////////////////////////////////////////////////////////////// -->
+ 
+    <section class="section-3">
+      <div class="left">
+        <img src="resources/Vector 2.png" alt="">
+      </div>
+      <div class="right">
+        <div class="text-box">
+          <h1>find <span> the perfect </span> match <br> fast</h1>
+      <P>
+        start your job in hours. not weeks. Get a short list of skilled freelancers instantly. Tapping int our hiring know-how and matching technology interview favourites online and hire the click of a button.
+      </P>
+        </div>
+      </div>
+    </section>
+     <!-- section 3 starts//////////////////////////////////////////////////////////////////////////// -->
+ <div class="sub-footer">
+  <p>if you have any question about our services?
+
+  </p>
+  <a href="#">
+    CONTACT US
+  </a>
+ </div>
+
+<!-- section 3 ends/////////////////////////////////////////////////////////////////////////////////// -->
+<!-- footer starts /////////////////////////////////////////////////////////////////////////////////// -->
+
+<footer>
+
+<div class='container'>
+	<div class='row-1'>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+<div class='social-section'>
+
+        <img src="resources/social media/facebook.png" alt="">
+        <img src="resources/social media/twitter.png" alt="">
+        <img src="resources/social media/google-plus.png" alt="">
+        <img src="resources/social media/dribble.png" alt="">
+        <img src="resources/social media/pinterest.png" alt="">
+        <img src="resources/social media/github.png" alt="">
+</div>
+</div>
+	<div class='row-2'>
+
+<div>
+<p>contact information</p>
+<ul>
+<li>JOB BOARD HEAD QUARER</li>
+<li>Phone: (800) 011234567890</li>
+<li>Email: contact@iconicitclub-bafsk.x10.mx</li>
+<li>NEW YORK OFFIC</li>
+<li>Madina colony, BGP ,Lahore</li>
+<li>Punjab, 54600</li>
+<li>Pakistan</li>
+</ul>
+</div>
+
+
+
+
+<div>
+<p>useful links</p>
+<ul>
+<li>Site Map</li>
+<li>Search Terms</li>
+<li>Advanced Search</li>
+<li>About US</li>
+<li>Suppliers</li>
+<li>Our Stores</li>
+<li>FAQs</li>
+<li>Payment</li>
+</ul>
+</div>.
+
+
+
+
+
+<div>
+<p>twitter block</p>
+<ul>
+<li>Looking for an awesome JOAB BOARD</li>
+<li>Landing page? Mike Uploaded and</li>
+<li>optimized Advanced Search</li>
+<li> Looking for an awesome </li>
+</ul>
+</div>
+
+
+<div>
+<p>latest from blog</p>
+<ul>
+<li> <img src="resources/fake-img.PNG" alt=""></li>
+<li> <img src="resources/fake-img.PNG" alt=""></li>
+<li><img src="resources/fake-img.PNG" alt=""> </li>
+<li> <img src="resources/fake-img.PNG" alt=""></li>
+</ul>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+</footer>
+<!-- footer ends /////////////////////////////////////////////////////////////////////////////////// -->
+
+</body>
+
+<script>
+  Menus=document.getElementById("menus");
+  bar=document.getElementById("bar");
+  bar.addEventListener('click', ()=>{
+    if (bar.className=="bar") {
+      Menus.className += " active";  
+      bar.className += " active-bar";  
+    } else {
+      Menus.className = "menus"
+      bar.className = "bar"
+    }
+  })
+  menuList=document.getElementsByClassName('menu-list')
+  console.log(menuList)
+  for(i = 0; i < menuList.length; i++) {
+    menuList[i].addEventListener('click', ()=>{
+      bar.click()
+    })
+}
+  
+  </script>
+  
+</html>
